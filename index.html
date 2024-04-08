@@ -1,13 +1,95 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Age Meter App</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Under Development</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Age Meter App</title>
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/css/general-sans.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid justify-content-evenly">
+      <a class="navbar-brand">
+        <img src="/logo.svg" alt="Bootstrap" width="173.31" height="26.32">
+      </a>
+      <ul class="navbar-nav d-none">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">How it Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+      </ul>
+      <button class="btn btn-outline-primary d-none" type="submit"> Getting Started <svg width="15" height="15"
+          viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+        </svg></button>
+    </div>
+  </nav>
+  </nav>
+
+  <div class="hero-text d-flex justify-content-center align-items-center flex-column">
+    <h1 class="text-center">Know Your <span>“Age in Seconds!”</span></h1>
+    <p class="text-center">
+      Our age calculator takes the guesswork out of it! Simply enter your birthdate and click "Calculate" to instantly
+      see your age in years, months, and even days (if desired).
+    </p>
+  </div>
+
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="main-div relative">
+      <p class="credit">UI inspiration from <a href="https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q" target="_blank">Frontend
+          Mentor</a></p>
+      <div class="input-fields-container">
+        <div class="input-field">
+          <div><label>DAY</label></div>
+          <input type="text" id="day" placeholder="DD">
+        </div>
+        <div class="input-field">
+          <div><label for="month">MONTH</label></div>
+          <input id="month" type="text" placeholder="MM">
+        </div>
+        <div class="input-field">
+          <div><label for="year">YEAR</label></div>
+          <input id="year" type="text" placeholder="YYYY">
+        </div>
+      </div>
+      <img src="/down-arrow.svg" class="image" onclick="getValue()" alt="icon">
+      <div class="ageformat-container">
+        <div>
+          <span class="dashes" id="calcYears">
+            --
+          </span>
+          <span id="words">years</span>
+        </div>
+        <div>
+          <span class="dashes" id="calcMonths">--</span>
+          <span id="words">months</span>
+        </div>
+        <div>
+          <span class="dashes" id="calcDays">--</span>
+          <span id="words">days</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer text-center">
+    <p>All Right Reserved!</p>
+  </div>
+  <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>

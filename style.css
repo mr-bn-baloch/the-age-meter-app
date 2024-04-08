@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    font-family: Montserrat;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F0F0F0;
+}
+
+.main-div {
+    height: 27rem;
+    width: 31rem;
+    background-color: #fff;
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+    border-bottom-left-radius: 1.2rem;
+    border-bottom-right-radius: 8.5rem;
+    position: relative;
+    margin-bottom: 188px;
+}
+
+.input-fields-container {
+    height: 7rem;
+    width: 23rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #737373;
+    opacity: .8;
+}
+
+label {
+    font-size: .5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+input {
+    margin-top: 4px;
+    width: 5rem;
+    height: 2.3rem;
+    padding-inline-start: 13px;
+    font-weight: 800;
+    border: 1px solid #F0F0F0;
+    border-radius: 4px;
+}
+
+:placeholder-shown {
+    font-size: 19px;
+}
+
+.ageformat-container {
+    margin-left: 1.2rem;
+    border-top: 1px solid #cccccc;
+    height: 15rem;
+    width: 25rem;
+    font-size: 4rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.dashes {
+    letter-spacing: 8px;
+    color: #824aff;
+}
+
+.image {
+    position: absolute;
+    width: 60px;
+    right: 40px;
+    top: 90px;
+}
+
+.hero-text h1 {
+    font-size: 58px;
+    font-weight: bold;
+    color: #38476b;
+}
+
+.hero-text span {
+    color: #824AFF;
+}
+
+.hero-text p {
+    color: #00000075;
+    font-size: 18px;
+    font-weight: light;
+    max-width: 795px;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero-text {
+    margin-top: 114px;
+    margin-bottom: 66px;
+    gap: 16px;
+    font-family: 'GeneralSans-Bold';
+}
+
+.footer {
+    color: #5B6C99;
+    font-size: 18px;
+    margin-bottom: 36px;
+    font-family: "Poppins", sans-serif;
+}
+
+.credit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-bottom: -35px;
+    text-wrap: nowrap;
+    font-style: italic;
+    font-size: 13px;
+}
